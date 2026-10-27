@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashanth | Frontend Developer | Full-Stack, Mobile &amp; AI Engineer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Prashanth, a Frontend Developer specializing in React, modern JavaScript (ES6+), responsive UI architecture, and full-stack &amp; GenAI systems. Based in Hyderabad, India.">
+  <meta name="keywords" content="Prashanth, Frontend Developer, React Developer, Full Stack Developer, JavaScript, Web Development, Hyderabad, Portfolio">
+  <meta name="author" content="Prashanth">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Prashanth | Frontend Developer Portfolio">
+  <meta property="og:description" content="Frontend Developer specializing in React, Node.js and GenAI systems. Shipping high-performance web apps, mobile solutions, and accessible interfaces.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prashanth.dev">
+  <meta property="og:image" content="assets/images/profile-placeholder.svg">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prashanth | Frontend Developer Portfolio">
+  <meta name="twitter:description" content="Frontend Developer specializing in React, responsive architectures, and accessible UI. Top 112 / 1000+ International Hackathon Finalist.">
+  <meta name="twitter:image" content="assets/images/profile-placeholder.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <!-- Skip to Content Link for Keyboard and Screen Reader Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ================================================================= -->
+  <!-- 1. STICKY HEADER & NAVIGATION                                      -->
+  <!-- ================================================================= -->
+  <header class="header" id="header" role="banner">
+    <div class="container header__container">
+      <!-- Logo / Monogram -->
+      <a href="#top" class="header__logo" aria-label="Prashanth Portfolio Home">
+        <span class="header__logo-icon" aria-hidden="true">&lt;P/&gt;</span>
+        <span class="header__logo-text">Prashanth<span class="header__logo-dot">.</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#why-hire-me" class="nav__link">Why Hire Me</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls: Recruiter Quick Sheet, Theme Toggle & Mobile Hamburger -->
+      <div class="header__actions">
+        <!-- Recruiter Cheat Sheet CTA Button -->
+        <button 
+          type="button" 
+          class="btn-recruiter-modal" 
+          id="btn-recruiter-modal" 
+          aria-haspopup="dialog" 
+          aria-controls="recruiter-modal"
+          title="Open Quick Overview for Recruiters"
+        >
+          <span class="btn-recruiter-modal__pulse" aria-hidden="true"></span>
+          <span class="btn-recruiter-modal__text">Recruiter TL;DR</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button 
+          type="button" 
+          class="theme-toggle" 
+          id="theme-toggle" 
+          aria-label="Switch between light and dark theme"
+          title="Toggle color theme"
+        >
+          <!-- Moon Icon (for Light Mode -> switches to Dark) -->
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+          <!-- Sun Icon (for Dark Mode -> switches to Light) -->
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button 
+          type="button" 
+          class="nav-toggle" 
+          id="nav-toggle" 
+          aria-expanded="false" 
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Backdrop overlay when mobile menu is open -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- Main Landmark -->
+  <main id="main-content">
+    
+    <!-- ================================================================= -->
+    <!-- 2. HERO / INTRO SECTION                                           -->
+    <!-- ================================================================= -->
+    <section class="hero section" id="home" aria-label="Introduction">
+      <div class="container hero__container">
+        
+        <!-- Text & Call to Action -->
+        <div class="hero__content reveal">
+          <!-- Availability Pill -->
+          <div class="hero__badge">
+            <span class="hero__badge-pulse" aria-hidden="true"></span>
+            <span>Actively Seeking Frontend Developer Roles &bull; Immediate Joiner</span>
+          </div>
+
+          <!-- Greeting & Headline -->
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name">Prashanth<span class="hero__name-accent">.</span></h1>
+          
+          <!-- Animated / Dynamic Role Line -->
+          <div class="hero__role-wrapper" aria-label="Role: Frontend Developer, Full-Stack, Mobile and AI Engineer">
+            <span class="hero__role-static">Specialized in </span>
+            <span class="hero__role-dynamic" id="role-typed" data-roles='["Frontend Engineering", "React & Modern UI Architecture", "Mobile App Development", "GenAI & Full-Stack Systems"]'>Frontend Engineering</span>
+            <span class="hero__cursor" aria-hidden="true">|</span>
+          </div>
+
+          <!-- Headline & Value Proposition -->
+          <p class="hero__subtitle">
+            Frontend Developer | Full-Stack, Mobile &amp; AI Engineer
+          </p>
+
+          <p class="hero__summary">
+            Full-Stack Developer specializing in React, Node.js and GenAI systems, with production experience shipping cross-platform mobile apps and AI SaaS. Proven in 24-hour hackathon sprints, with a Top 112 / 1,000+ international finish.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">
+              <span>Explore Projects</span>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </a>
+            
+            <a href="assets/resume.pdf" class="btn btn--secondary" download="Prashanth-Frontend-Developer-Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+              </svg>
+              <span>Download Resume (PDF)</span>
+            </a>
+
+            <button type="button" class="btn btn--glass" id="hero-quick-overview-btn">
+              <span>⚡ 30s Recruiter Overview</span>
+            </button>
+          </div>
+
+          <!-- Social Icon Links & Direct Contacts -->
+          <div class="hero__socials" aria-label="Social and contact profiles">
+            <!-- GitHub -->
+            <a href="https://github.com/prashanth" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Prashanth on GitHub (opens in new tab)">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/prashanth" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Prashanth on LinkedIn (opens in new tab)">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:kunallprassanth@gmail.com" class="social-icon" aria-label="Email Prashanth directly at kunallprassanth@gmail.com">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+919493240955" class="social-icon" aria-label="Call Prashanth at +91-9493240955">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </a>
+
+            <!-- Location indicator -->
+            <div class="hero__location">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Hyderabad, Telangana, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual / Profile Graphic -->
+        <div class="hero__visual reveal">
+          <div class="hero__image-wrapper">
+            <img 
+              src="assets/images/profile-placeholder.svg" 
+              alt="Prashanth - Frontend Developer portrait avatar with React, JavaScript, and AI tags" 
+              class="hero__image"
+              width="380"
+              height="380"
+              loading="eager"
+            >
+            <!-- Floating Highlights -->
+            <div class="hero__floating-card hero__floating-card--perf" aria-hidden="true">
+              <span class="hero__floating-icon">🚀</span>
+              <div>
+                <strong>95+ Lighthouse</strong>
+                <small>Core Web Vitals LCP &lt;1.8s</small>
+              </div>
+            </div>
+
+            <div class="hero__floating-card hero__floating-card--hack" aria-hidden="true">
+              <span class="hero__floating-icon">🏆</span>
+              <div>
+                <strong>Top 112 / 1000+</strong>
+                <small>Cardano Asia Finalist</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- =============================================================== -->
+      <!-- RECRUITER KEY METRICS COUNTER BAR                               -->
+      <!-- =============================================================== -->
+      <div class="container hero__metrics-wrapper reveal">
+        <div class="metrics-counter-bar">
+          <div class="counter-item">
+            <div class="counter-item__number"><span class="counter-val" data-target="35">35</span>%</div>
+            <div class="counter-item__label">Faster Screen Load Time (RideMate)</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-item__number"><span class="counter-val" data-target="95">95</span>+</div>
+            <div class="counter-item__label">Lighthouse Performance (LYVON Store)</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-item__number">Top <span class="counter-val" data-target="112">112</span></div>
+            <div class="counter-item__label">Global Finish / 1,000+ Asia Hackathon Teams</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-item__number"><span class="counter-val" data-target="10">10</span>K+</div>
+            <div class="counter-item__label">Monthly Views on Production Storefront</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 3. ABOUT & TIMELINE SECTION                                       -->
+    <!-- ================================================================= -->
+    <section class="about section" id="about" aria-label="About Prashanth">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-header__tag">Get To Know Me</span>
+          <h2 class="section-header__title">About &amp; Background</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Quick Facts Row -->
+        <div class="quick-facts reveal">
+          <div class="fact-card">
+            <div class="fact-card__icon" aria-hidden="true">📍</div>
+            <div class="fact-card__content">
+              <h3 class="fact-card__title">Location</h3>
+              <p class="fact-card__value">Hyderabad, Telangana, India</p>
+            </div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-card__icon" aria-hidden="true">🎓</div>
+            <div class="fact-card__content">
+              <h3 class="fact-card__title">Education</h3>
+              <p class="fact-card__value">B.Tech IT (Exp. 2027) &bull; Malla Reddy Univ.</p>
+            </div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-card__icon" aria-hidden="true">⚡</div>
+            <div class="fact-card__content">
+              <h3 class="fact-card__title">Hackathon Track</h3>
+              <p class="fact-card__value">Cardano Asia Finalist (Top 112 / 1,000+)</p>
+            </div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-card__icon" aria-hidden="true">👔</div>
+            <div class="fact-card__content">
+              <h3 class="fact-card__title">Leadership</h3>
+              <p class="fact-card__value">SCOPE Exec Board &amp; IT Class Rep</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio Paragraphs -->
+        <div class="about__grid reveal">
+          <div class="about__bio">
+            <h3 class="about__subheading">Engineering Clean, Accessible &amp; Impact-Driven Experiences</h3>
+            <p>
+              I am a frontend-focused developer with solid full-stack, mobile, and AI capabilities. My development philosophy is rooted in foundational engineering: writing clean semantic HTML5, modular and scalable CSS architectures, and performant, testable vanilla JavaScript (ES6+) and modern React.
+            </p>
+            <p>
+              Whether architecting a mobile carpooling application that cuts screen load times by 35%, engineering a direct-to-consumer apparel SPA with 95+ Lighthouse metrics and sub-1.8s LCP, or competing in intense 24-hour hackathons, I thrive at the intersection of pixel-perfect UI and rock-solid system execution.
+            </p>
+            <div class="about__certs">
+              <h4 class="about__certs-title">Certifications:</h4>
+              <ul class="about__certs-list">
+                <li><span class="cert-check">✓</span> Google Cloud Computing Foundations</li>
+                <li><span class="cert-check">✓</span> Celonis Process Mining Fundamentals</li>
+                <li><span class="cert-check">✓</span> CodeChef SQL &amp; Java Certified</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hackathon Finishes Highlights -->
+          <div class="about__achievements">
+            <h3 class="about__subheading">Hackathon &amp; Competitive Sprints</h3>
+            <div class="achievement-card">
+              <div class="achievement-card__badge">Top 112 / 1000+</div>
+              <h4 class="achievement-card__title">Finalist &bull; Cardano Asia International Hackathon</h4>
+              <p class="achievement-card__desc">Placed around 75th globally in a rigorous 24-hour sprint competing against 1,000+ international teams.</p>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-card__badge">4th Place (Top 4)</div>
+              <h4 class="achievement-card__title">4th Place &bull; Malla Reddy University Hackathon</h4>
+              <p class="achievement-card__desc">Ranked in the top 4 out of 50+ collegiate teams for delivering an end-to-end technical solution.</p>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-card__badge">National Finalist</div>
+              <h4 class="achievement-card__title">Finalist &bull; Yantra Yugam 24-Hour National Hackathon</h4>
+              <p class="achievement-card__desc">Rapid prototyping and architectural delivery under tight time constraints.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 4. SKILLS & TOOLS SECTION                                         -->
+    <!-- ================================================================= -->
+    <section class="skills section" id="skills" aria-label="Technical Skills">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-header__tag">My Technical Arsenal</span>
+          <h2 class="section-header__title">Skills &amp; Technologies</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+          <p class="section-header__desc">
+            No subjective percentage bars—just transparent, categorized technologies I actively build and deploy with.
+          </p>
+        </div>
+
+        <div class="skills__grid reveal">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category">
+            <div class="skill-category__header">
+              <div class="skill-category__icon" aria-hidden="true">💻</div>
+              <h3 class="skill-category__title">Languages</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip"><span class="chip-dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-chip"><span class="chip-dot"></span>HTML5</span>
+              <span class="skill-chip"><span class="chip-dot"></span>CSS3</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Python</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Java</span>
+              <span class="skill-chip"><span class="chip-dot"></span>SQL</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend & Mobile -->
+          <div class="skill-category skill-category--featured">
+            <div class="skill-category__header">
+              <div class="skill-category__icon" aria-hidden="true">🎨</div>
+              <h3 class="skill-category__title">Frontend &amp; Mobile</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip skill-chip--primary"><span class="chip-dot"></span>React.js</span>
+              <span class="skill-chip skill-chip--primary"><span class="chip-dot"></span>Next.js</span>
+              <span class="skill-chip skill-chip--primary"><span class="chip-dot"></span>React Native</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Tailwind CSS</span>
+              <span class="skill-chip"><span class="chip-dot"></span>GSAP Animations</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Responsive SPA Architecture</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend & APIs -->
+          <div class="skill-category">
+            <div class="skill-category__header">
+              <div class="skill-category__icon" aria-hidden="true">⚙️</div>
+              <h3 class="skill-category__title">Backend &amp; APIs</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip"><span class="chip-dot"></span>Node.js</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Express.js</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Django</span>
+              <span class="skill-chip"><span class="chip-dot"></span>RESTful APIs</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Firebase Auth</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Postman</span>
+              <span class="skill-chip"><span class="chip-dot"></span>WebSockets</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases, Cloud & AI -->
+          <div class="skill-category">
+            <div class="skill-category__header">
+              <div class="skill-category__icon" aria-hidden="true">🧠</div>
+              <h3 class="skill-category__title">Databases, Cloud &amp; AI</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip"><span class="chip-dot"></span>MongoDB</span>
+              <span class="skill-chip"><span class="chip-dot"></span>MySQL</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Supabase (PostgreSQL)</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Firebase Firestore</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Google Cloud Platform</span>
+              <span class="skill-chip"><span class="chip-dot"></span>LLM APIs</span>
+              <span class="skill-chip"><span class="chip-dot"></span>OpenCV</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Developer Tools -->
+          <div class="skill-category">
+            <div class="skill-category__header">
+              <div class="skill-category__icon" aria-hidden="true">🛠️</div>
+              <h3 class="skill-category__title">Developer Tools</h3>
+            </div>
+            <div class="skill-category__chips">
+              <span class="skill-chip"><span class="chip-dot"></span>Git</span>
+              <span class="skill-chip"><span class="chip-dot"></span>GitHub</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Vercel</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Netlify</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Google Maps API</span>
+              <span class="skill-chip"><span class="chip-dot"></span>WhatsApp Business API</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 5. FEATURED PROJECTS SECTION (With Interactive Filter Tabs)        -->
+    <!-- ================================================================= -->
+    <section class="projects section" id="projects" aria-label="Featured Projects">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-header__tag">Portfolio Showcase</span>
+          <h2 class="section-header__title">Featured Projects</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+          <p class="section-header__desc">
+            Production-grade applications and systems demonstrating end-to-end frontend craftsmanship, performance optimizations, and quantifiable metrics.
+          </p>
+
+          <!-- Interactive Category Filter Tabs -->
+          <div class="project-filters" role="tablist" aria-label="Filter Projects">
+            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All Projects (4)</button>
+            <button type="button" class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend &amp; E-Commerce</button>
+            <button type="button" class="filter-btn" data-filter="ai" role="tab" aria-selected="false">GenAI &amp; Vision</button>
+            <button type="button" class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Real-Time &amp; Dispatch</button>
+          </div>
+        </div>
+
+        <div class="projects__grid reveal" id="projects-grid">
+          
+          <!-- Project 1: Study Sphere -->
+          <article class="project-card" data-category="frontend ai">
+            <div class="project-card__thumbnail">
+              <img 
+                src="assets/images/study-sphere.svg" 
+                alt="Study Sphere - GenAI Study Companion application mockup" 
+                width="600" 
+                height="360" 
+                loading="lazy"
+              >
+              <div class="project-card__tag-pill">GenAI SaaS</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Study Sphere</h3>
+              <p class="project-card__subtitle">GenAI Study Companion</p>
+              <p class="project-card__desc">
+                Turns lengthy PDFs, text, and voice notes into concise, structured study summaries in under 90 seconds. Built with an intuitive document reader, adaptive level quizzes, and spaced-repetition flashcards.
+              </p>
+              
+              <!-- Tech Stack Tags -->
+              <div class="project-card__tech" aria-label="Technologies used">
+                <span>React.js</span>
+                <span>Tailwind</span>
+                <span>Node.js / Python</span>
+                <span>Supabase</span>
+                <span>LLM APIs</span>
+              </div>
+
+              <!-- Impact Metrics -->
+              <div class="project-card__metrics" aria-label="Key project impact metrics">
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">⚡</span>
+                  <span class="metric-pill__text">&lt;90s for 100+ pg docs (70% less prep time)</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">🎯</span>
+                  <span class="metric-pill__text">Adaptive Quizzes (92% question relevance)</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">📈</span>
+                  <span class="metric-pill__text">+45% Daily Active Usage via Flashcards</span>
+                </div>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-card__links">
+                <a href="https://github.com/prashanth" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer" aria-label="View Study Sphere Source Code on GitHub">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="#projects" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer" aria-label="View Study Sphere Live Demo">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Blood Link -->
+          <article class="project-card" data-category="mobile frontend">
+            <div class="project-card__thumbnail">
+              <img 
+                src="assets/images/blood-link.svg" 
+                alt="Blood Link - Emergency Medical Matching Engine dashboard mockup" 
+                width="600" 
+                height="360" 
+                loading="lazy"
+              >
+              <div class="project-card__tag-pill">Emergency Tech</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Blood Link</h3>
+              <p class="project-card__subtitle">Emergency Medical Matching Engine</p>
+              <p class="project-card__desc">
+                High-priority geo-matching platform that instantly routes critical blood donor requests from emergency hospitals to verified donors, backed by an automated regional blood-bank fallback pipeline.
+              </p>
+              
+              <!-- Tech Stack Tags -->
+              <div class="project-card__tech" aria-label="Technologies used">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>MongoDB / Supabase</span>
+                <span>Google Maps API</span>
+              </div>
+
+              <!-- Impact Metrics -->
+              <div class="project-card__metrics" aria-label="Key project impact metrics">
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">⏱️</span>
+                  <span class="metric-pill__text">&lt;2 min Match Time (65% better match rate)</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">🏥</span>
+                  <span class="metric-pill__text">100% Request Coverage (fallback routing)</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">🏆</span>
+                  <span class="metric-pill__text">+55% Repeat Sign-ups via Gamification</span>
+                </div>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-card__links">
+                <a href="https://github.com/prashanth" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer" aria-label="View Blood Link Source Code on GitHub">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="#projects" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer" aria-label="View Blood Link Live Demo">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: EduPulse -->
+          <article class="project-card" data-category="ai">
+            <div class="project-card__thumbnail">
+              <img 
+                src="assets/images/edupulse.svg" 
+                alt="EduPulse - Vision-Based Attendance System interface mockup" 
+                width="600" 
+                height="360" 
+                loading="lazy"
+              >
+              <div class="project-card__tag-pill">Computer Vision</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">EduPulse</h3>
+              <p class="project-card__subtitle">Vision-Based Attendance System</p>
+              <p class="project-card__desc">
+                Real-time computer vision attendance and attentiveness pipeline that performs multi-student facial detection simultaneously, replacing manual rolls with an automated, tamper-resistant system.
+              </p>
+              
+              <!-- Tech Stack Tags -->
+              <div class="project-card__tech" aria-label="Technologies used">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>NumPy</span>
+                <span>Automation</span>
+              </div>
+
+              <!-- Impact Metrics -->
+              <div class="project-card__metrics" aria-label="Key project impact metrics">
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">👥</span>
+                  <span class="metric-pill__text">60+ students in &lt;30s at 96% accuracy</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">⏳</span>
+                  <span class="metric-pill__text">Saved 5+ faculty hours each week</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">⚡</span>
+                  <span class="metric-pill__text">15 FPS tracking with 30% fewer false positives</span>
+                </div>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-card__links">
+                <a href="https://github.com/prashanth" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer" aria-label="View EduPulse Source Code on GitHub">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="#projects" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer" aria-label="View EduPulse Live Demo">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: LYVON -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-card__thumbnail">
+              <img 
+                src="assets/images/lyvon.svg" 
+                alt="LYVON - High-Performance D2C Storefront website mockup" 
+                width="600" 
+                height="360" 
+                loading="lazy"
+              >
+              <div class="project-card__tag-pill">E-Commerce Architecture</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">LYVON</h3>
+              <p class="project-card__subtitle">High-Performance D2C Storefront</p>
+              <p class="project-card__desc">
+                High-performance e-commerce frontend delivering instantaneous page loads, frictionless checkout transitions, and responsive fluid motion for a modern direct-to-consumer apparel brand.
+              </p>
+              
+              <!-- Tech Stack Tags -->
+              <div class="project-card__tech" aria-label="Technologies used">
+                <span>React.js</span>
+                <span>Tailwind CSS</span>
+                <span>GSAP</span>
+                <span>Vercel</span>
+              </div>
+
+              <!-- Impact Metrics -->
+              <div class="project-card__metrics" aria-label="Key project impact metrics">
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">🚀</span>
+                  <span class="metric-pill__text">95+ Lighthouse score (LCP &lt;1.8s, CLS &lt;0.05)</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">🛍️</span>
+                  <span class="metric-pill__text">+40% checkout click-through (10K+ monthly views)</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__icon">💳</span>
+                  <span class="metric-pill__text">-25% Cart Abandonment (200+ test transactions)</span>
+                </div>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-card__links">
+                <a href="https://github.com/prashanth" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer" aria-label="View LYVON Source Code on GitHub">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="#projects" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer" aria-label="View LYVON Live Demo">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 6. EXPERIENCE & TIMELINE SECTION                                  -->
+    <!-- ================================================================= -->
+    <section class="experience section" id="experience" aria-label="Work Experience">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-header__tag">Track Record</span>
+          <h2 class="section-header__title">Work Experience</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+          <p class="section-header__desc">
+            Production contributions delivering user retention, system performance, and responsive frontend architecture.
+          </p>
+        </div>
+
+        <!-- Vertical Timeline Component -->
+        <div class="timeline reveal">
+          
+          <!-- Experience Item 1 -->
+          <div class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__dot"></span>
+            </div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Mobile Application Developer Intern</h3>
+                  <p class="timeline__company">Aagamvart Pvt Ltd &bull; Hyderabad, India</p>
+                  <p class="timeline__project">Project: <strong>RideMate</strong> (Cross-platform Carpooling App)</p>
+                </div>
+                <span class="timeline__date">Internship</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Architected navigation and state management for <strong>5+ booking flows</strong>, cutting screen load time by <strong>35%</strong> with modular components and lazy loading.</li>
+                <li>Built geo-spatial ride publishing and discovery (<strong>&lt;150m accuracy, 500+ test listings</strong>) with Google Maps SDK, geohashing, and Firestore real-time queries.</li>
+                <li>Implemented Firebase Auth and a real-time booking engine (<strong>&lt;200ms sync, 99% booking success</strong> in user acceptance testing).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__dot"></span>
+            </div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Co-Founder &amp; Web Architect</h3>
+                  <p class="timeline__company">LYVON &bull; D2C Apparel Brand</p>
+                </div>
+                <span class="timeline__date">Founder &amp; Architect</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Built a responsive React + Tailwind SPA with <strong>10K+ monthly views</strong> and <strong>95+ Lighthouse performance</strong>, boosting checkout click-through by <strong>40%</strong>.</li>
+                <li>Shipped payment-link checkout that cut cart abandonment by <strong>25%</strong> across <strong>200+ test transactions</strong>.</li>
+                <li>Optimized Core Web Vitals to <strong>LCP &lt;1.8s</strong> and <strong>CLS &lt;0.05</strong>, improving user retention by <strong>30%</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__dot"></span>
+            </div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Campus Ambassador</h3>
+                  <p class="timeline__company">Student Tribe &bull; Hyderabad, India</p>
+                </div>
+                <span class="timeline__date">Leadership</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Reached <strong>1,500+ students</strong> across <strong>10+ campus tech cohorts</strong> and increased event registrations by <strong>60%</strong>.</li>
+                <li>Grew partner campaign reach <strong>3x in 30 days</strong> through focused technical workshops and peer engagement.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 7. WHY HIRE ME AS A FRONTEND DEVELOPER (Recruiter Value Prop)      -->
+    <!-- ================================================================= -->
+    <section class="why-hire-me section" id="why-hire-me" aria-label="Why Hire Prashanth">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-header__tag">Hiring Value Proposition</span>
+          <h2 class="section-header__title">Why Hire Me for Your Frontend Team?</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+          <p class="section-header__desc">
+            What I bring to day-to-day agile sprints, product roadmaps, and frontend codebases.
+          </p>
+        </div>
+
+        <div class="why-hire__grid reveal">
+          
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">⚡</div>
+            <h3 class="why-card__title">Core Web Vitals &amp; Performance Obsessed</h3>
+            <p class="why-card__desc">
+              I treat milliseconds as user retention. From code splitting and asset optimization to sub-1.8s LCP scores and zero layout shifts (CLS &lt;0.05), I write code that loads fast and stays responsive.
+            </p>
+            <div class="why-card__pill">95+ Lighthouse Standards</div>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">♿</div>
+            <h3 class="why-card__title">Accessibility &amp; Semantic Fundamentals</h3>
+            <p class="why-card__desc">
+              Clean semantic HTML5, keyboard navigation (`:focus-visible`), ARIA live regions, and WCAG AA guidelines are built in from line one—never an afterthought.
+            </p>
+            <div class="why-card__pill">WCAG AA &amp; Screen Reader Friendly</div>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">📱</div>
+            <h3 class="why-card__title">Cross-Platform &amp; Responsive Fluidity</h3>
+            <p class="why-card__desc">
+              Experienced shipping responsive web SPAs (React/Next.js) and cross-platform mobile apps (React Native). Fluid layouts tested across 320px mobile up to 4K desktop screens.
+            </p>
+            <div class="why-card__pill">Zero Horizontal Scroll Guaranteed</div>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">🚀</div>
+            <h3 class="why-card__title">Fast Execution in High-Pressure Sprints</h3>
+            <p class="why-card__desc">
+              Proven in 24-hour hackathons (Top 112 / 1,000+ teams in Asia). Fast at translating Figma designs into production code and collaborating closely with backend and AI engineers.
+            </p>
+            <div class="why-card__pill">Hackathon Tested &bull; Agile Ready</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 8. CONTACT SECTION & VALIDATED FORM                              -->
+    <!-- ================================================================= -->
+    <section class="contact section" id="contact" aria-label="Contact Information and Inquiries">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-header__tag">Let's Connect</span>
+          <h2 class="section-header__title">Get In Touch</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+          <p class="section-header__desc">
+            Have an open frontend opportunity, a project idea, or want to discuss full-stack &amp; GenAI engineering? Drop me a message or contact me directly.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact__info reveal">
+            <h3 class="contact__info-heading">Direct Contact Information</h3>
+            <p class="contact__info-intro">
+              I am actively looking for Frontend Developer and Software Engineer roles. Feel free to reach out via email, phone, or LinkedIn.
+            </p>
+
+            <div class="contact-card">
+              <div class="contact-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="contact-card__body">
+                <span class="contact-card__label">Email</span>
+                <a href="mailto:kunallprassanth@gmail.com" class="contact-card__link">kunallprassanth@gmail.com</a>
+              </div>
+              <button type="button" class="contact-card__copy-btn" id="copy-email-btn" aria-label="Copy email address to clipboard" title="Copy email">
+                <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span class="copy-feedback" aria-live="polite"></span>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-card__body">
+                <span class="contact-card__label">Phone</span>
+                <a href="tel:+919493240955" class="contact-card__link">+91-9493240955</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-card__body">
+                <span class="contact-card__label">Location</span>
+                <span class="contact-card__link">Hyderabad, Telangana, India</span>
+              </div>
+            </div>
+
+            <div class="contact__social-links">
+              <span class="contact__social-title">Connect Online:</span>
+              <div class="contact__social-row">
+                <a href="https://github.com/prashanth" class="social-pill" target="_blank" rel="noopener noreferrer">
+                  <span>github.com/prashanth</span>
+                </a>
+                <a href="https://linkedin.com/in/prashanth" class="social-pill" target="_blank" rel="noopener noreferrer">
+                  <span>linkedin.com/in/prashanth</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vanilla JS Validated Contact Form -->
+          <div class="contact__form-wrapper reveal">
+            <h3 class="contact__form-heading">Send a Message</h3>
+            
+            <!-- Accessible Live Status Notification Area for Submit Status -->
+            <div id="form-status" class="form-status" aria-live="assertive"></div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <!-- Full Name Field -->
+              <div class="form-group" id="group-name">
+                <label for="name" class="form-label">
+                  Full Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="e.g. Sarah Jenkins (Recruiter / Lead)"
+                    required 
+                    autocomplete="name"
+                    aria-describedby="name-error"
+                    aria-invalid="false"
+                  >
+                  <!-- State Indicator Icon -->
+                  <span class="input-icon input-icon--valid" aria-hidden="true">✓</span>
+                  <span class="input-icon input-icon--invalid" aria-hidden="true">!</span>
+                </div>
+                <div id="name-error" class="form-error" aria-live="polite"></div>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group" id="group-email">
+                <label for="email" class="form-label">
+                  Work / Personal Email <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="e.g. sarah@company.com"
+                    required 
+                    autocomplete="email"
+                    aria-describedby="email-error"
+                    aria-invalid="false"
+                  >
+                  <span class="input-icon input-icon--valid" aria-hidden="true">✓</span>
+                  <span class="input-icon input-icon--invalid" aria-hidden="true">!</span>
+                </div>
+                <div id="email-error" class="form-error" aria-live="polite"></div>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group" id="group-subject">
+                <label for="subject" class="form-label">
+                  Subject <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="subject" 
+                    name="subject" 
+                    class="form-input" 
+                    placeholder="e.g. Frontend Developer Role / Interview Invitation"
+                    required 
+                    aria-describedby="subject-error"
+                    aria-invalid="false"
+                  >
+                  <span class="input-icon input-icon--valid" aria-hidden="true">✓</span>
+                  <span class="input-icon input-icon--invalid" aria-hidden="true">!</span>
+                </div>
+                <div id="subject-error" class="form-error" aria-live="polite"></div>
+              </div>
+
+              <!-- Message Field with Live Character Counter -->
+              <div class="form-group" id="group-message">
+                <div class="form-label-row">
+                  <label for="message" class="form-label">
+                    Message <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <span class="char-counter" id="char-counter" aria-live="polite">
+                    <span id="char-count">0</span> / 500 characters
+                  </span>
+                </div>
+                <div class="input-wrapper">
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    class="form-input form-textarea" 
+                    rows="5" 
+                    maxlength="500"
+                    placeholder="Tell me about your role, team, or project requirements (10 - 500 characters)..."
+                    required
+                    aria-describedby="message-error"
+                    aria-invalid="false"
+                  ></textarea>
+                  <span class="input-icon input-icon--valid input-icon--textarea" aria-hidden="true">✓</span>
+                  <span class="input-icon input-icon--invalid input-icon--textarea" aria-hidden="true">!</span>
+                </div>
+                <div id="message-error" class="form-error" aria-live="polite"></div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn btn--primary btn--block">
+                <span class="btn__text">Send Message</span>
+                <span class="btn__spinner" aria-hidden="true"></span>
+                <svg class="btn__icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+
+              <p class="form-disclaimer">
+                🔒 Your privacy is respected. Form inputs are validated strictly client-side with native JavaScript.
+              </p>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- 9. RECRUITER TL;DR QUICK-VIEW MODAL DIALOG                        -->
+  <!-- ================================================================= -->
+  <div class="modal-backdrop" id="recruiter-modal-backdrop" aria-hidden="true">
+    <div 
+      class="recruiter-modal" 
+      id="recruiter-modal" 
+      role="dialog" 
+      aria-modal="true" 
+      aria-labelledby="recruiter-modal-title"
+    >
+      <div class="recruiter-modal__header">
+        <div class="recruiter-modal__tag">⚡ Recruiter Cheat Sheet</div>
+        <button type="button" class="recruiter-modal__close" id="recruiter-modal-close" aria-label="Close modal dialog">&times;</button>
+      </div>
+
+      <div class="recruiter-modal__body">
+        <h2 id="recruiter-modal-title" class="recruiter-modal__name">Prashanth &bull; Frontend Developer</h2>
+        <p class="recruiter-modal__subtitle">Full-Stack, Mobile &amp; AI Engineer &bull; Hyderabad, India</p>
+
+        <div class="recruiter-modal__quick-facts">
+          <div class="r-fact">
+            <span class="r-fact__label">Target Roles:</span>
+            <span class="r-fact__val">Frontend Developer, React Engineer, Software Engineer</span>
+          </div>
+          <div class="r-fact">
+            <span class="r-fact__label">Availability:</span>
+            <span class="r-fact__val text-success">Immediate Joiner / Open to Full-Time &amp; Internships</span>
+          </div>
+          <div class="r-fact">
+            <span class="r-fact__label">Work Model:</span>
+            <span class="r-fact__val">Open to Remote, Hybrid, or Onsite (Relocation Ready)</span>
+          </div>
+        </div>
+
+        <h3 class="recruiter-modal__section-title">Top 3 Technical Highlights</h3>
+        <ul class="recruiter-modal__highlights">
+          <li><strong>Performance Optimization:</strong> Shipped a D2C React/Tailwind SPA with 95+ Lighthouse score, sub-1.8s LCP, and sub-0.05 CLS, improving conversion click-through by 40%.</li>
+          <li><strong>Cross-Platform Architecture:</strong> Architected 5+ booking flows for RideMate carpooling app, cutting mobile screen load times by 35% with lazy loading and geohash queries.</li>
+          <li><strong>High-Pressure Delivery:</strong> Top 112 international finalist out of 1,000+ teams in the 24-hour Cardano Asia International Hackathon.</li>
+        </ul>
+
+        <h3 class="recruiter-modal__section-title">Core Skills Stack</h3>
+        <div class="recruiter-modal__skills">
+          <span>React.js</span>
+          <span>JavaScript (ES6+)</span>
+          <span>Next.js</span>
+          <span>Tailwind CSS</span>
+          <span>Node.js</span>
+          <span>React Native</span>
+          <span>REST APIs</span>
+          <span>Supabase / Firebase</span>
+          <span>Git / GitHub</span>
+        </div>
+
+        <div class="recruiter-modal__actions">
+          <a href="assets/resume.pdf" class="btn btn--primary" download="Prashanth-Frontend-Developer-Resume.pdf">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            <span>Download Resume (PDF)</span>
+          </a>
+          <a href="mailto:kunallprassanth@gmail.com" class="btn btn--secondary">
+            <span>Email Directly</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 10. FOOTER WITH COPYRIGHT & BACK-TO-TOP                           -->
+  <!-- ================================================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__container">
+      
+      <div class="footer__brand">
+        <a href="#top" class="footer__logo" aria-label="Back to top">
+          &lt;P/&gt; Prashanth<span class="header__logo-dot">.</span>
+        </a>
+        <p class="footer__tagline">
+          Frontend Developer | Full-Stack, Mobile &amp; AI Engineer
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#why-hire-me">Why Hire Me</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="current-year">2026</span> Prashanth. Built with semantic HTML5, CSS3 &amp; Vanilla JavaScript (ES6+). Zero build tools. Deployable as a static site.
+        </p>
+
+        <!-- Back to Top Button -->
+        <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top of page" title="Back to top">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"/>
+          </svg>
+          <span>Top</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
